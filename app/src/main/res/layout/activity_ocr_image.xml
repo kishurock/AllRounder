@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F5"
+    tools:context=".OcrImageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/beyond_the_mountains"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Press + button to add the image. "
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHeadline"
+            android:layout_marginTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txtheadlineTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/beyond_the_mountains"
+                        android:padding="10dp"
+                        android:text="Result:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/txtResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtheadlineTwo"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Text Extracted From the image will be displayed here"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewOne"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:id="@+id/txtheadlineThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/beyond_the_mountains"
+                        android:padding="10dp"
+                        android:text="Image  Preview:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/txtDescriptionOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtheadlineThree"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="The selected image will be displayed here"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imgImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtheadlineThree"
+                        android:maxHeight="250dp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

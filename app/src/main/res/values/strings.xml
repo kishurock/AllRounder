@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AllRounder</string>
+    <string name="allrounder">AllRounder</string>
+    <string name="ocr_image_processing">OCR Image Processing</string>
+
+    <string name="choose_this_if_you_want_to_convert_your_voice_or_speech_into_text_enjoy">Choose this if you want to convert your voice or speech into text. Enjoy!!</string>
+    <string name="speech_to_text_converter">Speech to Text Converter</string>
+    <string name="please_choose_according_to_your_need">Please Choose According to your need</string>
+    <string name="choose_this_if_you_want_to_recognize_the_characters_of_the_photo_taken_by_the_camera_enjoy">Choose this if you want to recognize the characters of the photo taken by the camera. Enjoy!!</string>
+
+</resources>

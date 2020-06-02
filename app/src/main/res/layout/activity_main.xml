@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F5"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtChooseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/beyond_the_mountains"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/please_choose_according_to_your_need"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/txtChooseText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_margin="12dp"
+        android:background="#ffffff"
+        android:elevation="2dp"
+        android:padding="10dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtHeadLineOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/speech_to_text_converter"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescriptionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeadLineOne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/choose_this_if_you_want_to_convert_your_voice_or_speech_into_text_enjoy"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnSpeechToText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionOne"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/beyond_the_mountains"
+                android:paddingTop="5dp"
+                android:text="speech  to  text"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardViewOne"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#ffffff"
+        android:elevation="2dp"
+        android:padding="10dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtHeadLineTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ocr_image_processing"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescriptionTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeadLineTwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/choose_this_if_you_want_to_recognize_the_characters_of_the_photo_taken_by_the_camera_enjoy"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnOcrImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionTwo"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/beyond_the_mountains"
+                android:paddingTop="5dp"
+                android:text="ocr  image  process"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
